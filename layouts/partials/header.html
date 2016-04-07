@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body lang="{{ .Site.Params.Lang }}">
+<div class="container">
+    <section class="header row"> 
+        <div class="columns twelve">
+            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
+            <nav>
+                <ul>
+                    <a href="/blog/"><li>Blog</li></a>
+                    <!--<a href="/projects/"><li>Projekte</li></a>-->
+                    <a href="/about/"><li>Über Mich</li></a>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    

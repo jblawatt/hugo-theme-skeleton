@@ -1,0 +1,12 @@
+name = "HugoSkeleton"
+license = "MIT"
+licenselink = "https://github.com/jblawatt/hugo-theme-skeleton/blob/master/LICENSE.md"
+description = "Lightweight Hugo theme based on Skeleton"
+homepage = "https://github.com/jblawatt/hugo-theme-skeleton"
+tags = ["skeleton", "minimal", "clean", "comments"]
+features = ["blog", "responsive", "404", "icons", "disqus", "metadata", "prism"]
+min_version = 0.15
+
+[author]
+  name = "Jens Blawatt"
+  homepage = "http://www.blawatt.de/"

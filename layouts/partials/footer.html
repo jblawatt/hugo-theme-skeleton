@@ -1,0 +1,55 @@
+    <section class="icons row">
+        <div class="columns twelve">
+            {{ if .Site.Params.GitHub }}
+                <a href="{{ .Site.Params.GitHub }}" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            {{ end }}
+            
+            {{ if .Site.Params.Twitter }}
+                <a href="{{ .Site.Params.Twitter }}" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.LinkedIn }}
+                <a href="{{ .Site.Params.LinkedIn }}" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.Facebook }}
+                <a href="{{ .Site.Params.Facebook }}" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.SoundCloud }}
+                <a href="{{ .Site.Params.SoundCloud }}" target="_blank">
+                    <i class="icon ion-ios-musical-notes larger"></i>
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.Email }}
+                <a href="mailto:{{ .Site.Params.Email }}">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            {{ end }}
+        </div>
+    </section>
+
+    <section class="copyright row">
+        <div class="columns twelve">
+            {{ .Site.Params.Copyright}} <br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a>, Theme <a href="http://github.com/jblawatt/hugo-theme-skeleton" target="_blank">skeleton</a> designed by <a href="http://www.blawatt.de" target="_blank">Jens Blawatt</a>
+        </div>
+    </section>
+
+</div> <!-- /container -->
+
+
+
+{{ partial "footer_scripts" . }}
+
+</body>
+</html>

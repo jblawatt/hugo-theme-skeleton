@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section class="main row">
+    <div class="columns twelve">
+        <div class="title-container">
+            {{ partial "page-heading" . }}
+            <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
+        </div>
+         <div class="content">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}

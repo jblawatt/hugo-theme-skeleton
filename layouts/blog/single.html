@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+<section class="main row">
+    <div class="columns twelve">
+        <div class="title-container">
+            {{ partial "page-heading" . }}
+            <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
+        </div>
+        <div class="meta">
+            <span class="date" title="{{ .Date.Format .Site.Params.DateFormFull }}">{{ .Date.Format .Site.Params.DateForm }}</span>
+            <!--<span class="reading-time">
+                <span class="middot"></span>
+                {{ if eq 1 .ReadingTime }}
+                    {{ .ReadingTime }} minute read
+                {{ else }}
+                    {{ .ReadingTime }} minutes read
+                {{ end }}
+            </span>-->
+        </div>
+        <div class="content">
+            {{ .Content }}
+            <br>
+            <p><a href="/blog/">Zurück zur Übersicht</a></p>
+        </div>
+        <div class="disqus">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
