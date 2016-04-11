@@ -10,9 +10,10 @@
             <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
             <nav>
                 <ul>
-                    <a href="/blog/"><li>Blog</li></a>
-                    <!--<a href="/projects/"><li>Projekte</li></a>-->
-                    <a href="/about/"><li>Über Mich</li></a>
+                    
+                {{range .Site.Menus.main}}
+                    <li><a href="{{.URL}}">{{.Name}}</a></li>
+                {{end}}
                 </ul>
             </nav>
         </div>
