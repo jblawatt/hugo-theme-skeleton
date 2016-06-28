@@ -1,6 +1,13 @@
 
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Slabo+27px';
+
 .main .meta {
-    color: #666;
+    color: #a6a6a6;
+    margin-bottom: 10px;
+}
+
+body {
+  background-color: #f8f8f8;
 }
 
 code {
@@ -29,23 +36,32 @@ a { text-decoration: none; color: #4078c0;}
     padding: 0 15px 0 15px;
 }
 
-h1, h2, h3, h4, h4, .header .name, .header nav {
+h1, h2, h3, h4, h4 {
     text-transform: uppercase;
+    font-family: 'Slabo 27px';
+    font-size: 3rem;
+}
+
+.header .name, .header nav {
+    text-transform: uppercase;
+
+    font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 2rem;
     font-weight: bold;
 }
 
 section.header {
-    margin: 50px 0 30px 50px;
+    margin: 50px 0 50px;
+    text-align: center;
 }
 
 section.header .name {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #455a64;
+    color: black;
+    font-family: 'Architects Daughter';
 }
 
 section.header ul li {
@@ -68,4 +84,21 @@ section.main .middot:before {
 section.copyright {
     margin-top: 100px;
     text-align: center;
+}
+
+.main.row, .icons.row {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border: solid #f3f3f3 1px;
+  /*box-shadow: 1px 1px 0px #f3f3f3;*/
+  border-radius: 2px;
+}
+
+.content {
+  color: #5a5a5a;
+}
+
+.content img {
+  max-width: 100%;
 }
