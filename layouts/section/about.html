@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<section class="row content">
+    <div class="columns twelve">
+        <h1 class="page-heading">about me</h1>
+        <div class="banner-container">
+            <img src="/images/jens-blawatt.png" alt="">
+        </div>
+        <p>
+            My name is <strong>Jens Blawatt</strong>. Currently i work for the <a href="http://www.gws.ms">GWSmbH</a> in Münster, Germany.
+        </p>
+        <h2>professional career</h2>
+        <ul class="post-list">
+            {{ range .Data.Pages.ByPublishDate }}
+                {{ partial "career.html" . }}
+            {{ end }}
+        </ul>
+    </div>
+</section>
+{{ partial "footer.html" . }}

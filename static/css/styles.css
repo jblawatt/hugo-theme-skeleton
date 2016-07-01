@@ -1,28 +1,55 @@
 
-@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Slabo+27px';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,800,800italic';
 
-.main .meta {
-    color: #a6a6a6;
-    margin-bottom: 10px;
+body {
+
+
 }
 
 body {
-  background-color: #f8f8f8;
+    font-family: "Roboto", "Open Sans", Arial;
+    font-weight: 300;
+    background-color: #f8f8f8;
 }
+
+.content .meta {
+    color: #a6a6a6;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
 
 code {
     border: 0;
 }
 
-pre > code { padding: 0; }
+pre > code {
+    padding: 0;
+}
 
-a { text-decoration: none; color: #4078c0;}
+a {
+    text-decoration: none;
+    color: #4078c0;
+}
 
+h1, h2, h3, h4, h5 { color: black }
+
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2.0rem;}
+h3 {font-size: 1.5rem;}
+
+.container {
+    padding: 0;
+}
 
 .post-list {
     list-style: none;
     display: list-item;
     align-items: center;
+}
+
+.post-list .middot {
+    padding: 0 15px 0 15px;
 }
 
 .post-item .meta {
@@ -32,24 +59,9 @@ a { text-decoration: none; color: #4078c0;}
     margin-right: 15px;
 }
 
-.post-list .middot {
-    padding: 0 15px 0 15px;
-}
-
-h1, h2, h3, h4, h4 {
-    text-transform: uppercase;
-    font-family: 'Slabo 27px';
-    font-size: 3rem;
-}
-
 .header .name, .header nav {
     text-transform: uppercase;
-
     font-size: 1.5rem;
-}
-
-h1 {
-    font-weight: bold;
 }
 
 section.header {
@@ -59,9 +71,7 @@ section.header {
 
 section.header .name {
     font-size: 3rem;
-    font-weight: bold;
     color: black;
-    font-family: 'Architects Daughter';
 }
 
 section.header ul li {
@@ -70,15 +80,11 @@ section.header ul li {
 }
 
 section.header ul a {
-    color: #666;
-}
-
-section.main .middot:before {
-  content: "•";
+    color: #666666;
 }
 
 .icons a {
-    color: #666;
+    color: #666666;
 }
 
 section.copyright {
@@ -86,19 +92,62 @@ section.copyright {
     text-align: center;
 }
 
-.main.row, .icons.row {
-  padding: 20px;
-  margin: 10px;
-  background-color: white;
-  border: solid #f3f3f3 1px;
-  /*box-shadow: 1px 1px 0px #f3f3f3;*/
-  border-radius: 2px;
-}
-
 .content {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
   color: #5a5a5a;
+  border: solid #f3f3f3 1px;
+  box-shadow: 2px 2px 2px #f3f3f3;
+  border-radius: 2px;
 }
 
 .content img {
   max-width: 100%;
+}
+
+.banner {
+    margin-bottom: 0;
+    border: solid #f3f3f3 1px;
+    box-shadow: 2px 2px 2px #f3f3f3;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.banner img {
+  max-width: 100%;
+  margin-bottom: -7px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+
+.time {
+    font-weight: 400;
+    color: #4078c0;
+}
+
+.career-row {
+    margin-bottom: 20px;
+    border-bottom: dotted #d3d3d3 1px;
+}
+
+.career-title {
+    font-weight: 400;
+}
+
+.career-title-prefix {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.content div.banner-container {
+    max-height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.content div.banner-container img {
+    position: relative;
+    top: -90px;
 }

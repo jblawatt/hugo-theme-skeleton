@@ -1,0 +1,18 @@
+<div class="row career-row">
+    <div class="columns three">
+        <div class="time">
+            {{ .Params.timerange }}
+        </div>
+    </div>
+    <div class="columns nine">
+        <div class="">
+            <span class="career-title">
+                {{ if .Params.prefix }}
+                    <span class="career-title-prefix">{{ .Params.prefix }}:</span>
+                {{ end}}
+                {{ .Title }}
+            </span> <br>
+            {{ .Content }}
+        </div>
+    </div>
+</div>

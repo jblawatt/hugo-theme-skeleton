@@ -1,11 +1,11 @@
-    <section class="icons row">
-        <div class="columns twelve">
+    <section class="icons row content">
+        <div class="columns ten">
             {{ if .Site.Params.GitHub }}
                 <a href="{{ .Site.Params.GitHub }}" target="_blank">
                     <i class="fa fa-github"></i>
                 </a>
             {{ end }}
-            
+
             {{ if .Site.Params.Twitter }}
                 <a href="{{ .Site.Params.Twitter }}" target="_blank">
                     <i class="fa fa-twitter"></i>
@@ -36,6 +36,9 @@
                 </a>
             {{ end }}
         </div>
+        <div class="columns two">
+            <a href="/impressum/">Impressum</a>
+        </div>
     </section>
 
     <section class="copyright row">
@@ -46,8 +49,6 @@
     </section>
 
 </div> <!-- /container -->
-
-
 
 {{ partial "footer_scripts" . }}
 

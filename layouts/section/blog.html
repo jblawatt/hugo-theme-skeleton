@@ -1,10 +1,15 @@
 {{ partial "header.html" . }}
-<section class="main row">
+<section class="row content">
     <div class="columns twelve">
         <h1 class="page-heading">Blog</h1>
+        <div class="banner-container">
+            <img src="/images/blog.jpg" alt="">
+        </div>
         <ul class="post-list">
             {{ range .Data.Pages.ByPublishDate }}
-                {{ partial "li.html" . }}
+                {{ if eq .Section "blog" }}
+                    {{ partial "li.html" . }}
+                {{ end }}
             {{ end }}
         </ul>
     </div>

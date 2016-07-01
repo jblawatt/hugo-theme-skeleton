@@ -1,4 +1,9 @@
 <li class="post-item">
     <div class="meta">{{ .Date.Format .Site.Params.DateForm }}</div>
-    <a href="{{ .Permalink }}"><div>{{ .Title }}</div></a>
+    <div>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ if .Params.lang }}
+            <small title="Language: {{ .Params.lang }}">({{ .Params.lang }})</small>
+        {{ end }}
+    </div>
 </li>

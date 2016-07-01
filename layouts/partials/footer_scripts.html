@@ -12,7 +12,8 @@ try {
 </script>
 {{ end }}
 
-<script src="/js/prism.min.js"></script>
+<script type="text/javascript" src="/js/prism.min.js"></script>
+<script type="text/javascript" src="/js/cookie.notice.js"></script>
 
 {{range .Site.Params.ExtraJsFiles}}
     <script src="{{.}}"></script>

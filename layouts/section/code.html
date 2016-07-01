@@ -1,15 +1,26 @@
 {{ partial "header.html" . }}
-<section class="main row">
+<section class="row content">
     <div class="columns twelve">
         <h1 class="page-heading">Code</h1>
+        <div class="banner-container">
+            <img src="/images/code.jpg" alt="">
+        </div>
         <p>
-          This is a site whre i ...
+            On this site i want to introduce the small projects i work on, when i'm not at work.
+            <br>
+            Feel free to contribute.
         </p>
-        <ul class="post-list">
-            {{ range .Data.Pages.ByPublishDate }}
-                {{ partial "li.html" . }}
-            {{ end }}
-        </ul>
+        <div class="row">
+          {{ range .Data.Pages.ByPublishDate }}
+            <div class="columns four">
+              <strong>{{ .Title }}</strong>
+              <br>
+                  {{ .Description }}
+              <br>
+              <a href="{{ .RelPermalink }}" class="button">read more</a>
+            </div>
+          {{ end }}
+        </div>
     </div>
 </section>
 {{ partial "footer.html" . }}

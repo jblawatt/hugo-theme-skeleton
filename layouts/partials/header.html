@@ -4,18 +4,16 @@
 {{ partial "head.html" . }}
 
 <body lang="{{ .Site.Params.Lang }}">
-<div class="container">
-    <section class="header row"> 
-        <div class="columns twelve">
-            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
-            <nav>
-                <ul>
-                    
-                {{range .Site.Menus.main}}
-                    <li><a href="{{.URL}}">{{.Name}}</a></li>
-                {{end}}
-                </ul>
-            </nav>
-        </div>
+  <div class="container">
+    <section class="header row">
+      <div class="columns twelve">
+        <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
+        <nav>
+          <ul>
+            {{range .Site.Menus.main}}
+              <li><a href="{{.URL}}">{{.Name}}</a></li>
+            {{end}}
+          </ul>
+        </nav>
+      </div>
     </section>
-    
