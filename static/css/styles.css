@@ -1,5 +1,5 @@
 
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,800,800italic';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,700,800,800italic';
 
 body {
 
@@ -133,7 +133,7 @@ section.copyright {
 }
 
 .career-title {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .career-title-prefix {
@@ -141,13 +141,19 @@ section.copyright {
     font-weight: 300;
 }
 
-.content div.banner-container {
+career-prefix {}
+
+.banner-container {
     max-height: 300px;
-    margin-bottom: 20px;
     overflow: hidden;
 }
 
-.content div.banner-container img {
-    position: relative;
-    top: -90px;
+span.label {
+    color: black;
+    background-color: #8fb4e4; /*#2260b1;*/
+    border: solid #8fb4e4 1px;
+    border-radius: 3px;
+    font-size: small;
+    padding: 2px;
+
 }
