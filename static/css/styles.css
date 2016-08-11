@@ -1,13 +1,9 @@
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,700,800,800italic';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic);
 
 body {
-
-
-}
-
-body {
-    font-family: "Roboto", "Open Sans", Arial;
+    font-family: "Open Sans", Arial;
     font-weight: 300;
     background-color: #f8f8f8;
 }
@@ -17,7 +13,6 @@ body {
     margin-bottom: 10px;
     font-style: italic;
 }
-
 
 code {
     border: 0;
@@ -121,7 +116,6 @@ section.copyright {
   border-top-left-radius: 2px;
 }
 
-
 .time {
     font-weight: 400;
     color: #4078c0;
@@ -146,14 +140,13 @@ career-prefix {}
 .banner-container {
     max-height: 300px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 span.label {
-    color: black;
-    background-color: #8fb4e4; /*#2260b1;*/
-    border: solid #8fb4e4 1px;
+    color: #2260b1;
+    border: solid #2260b1 1px;
     border-radius: 3px;
     font-size: small;
-    padding: 2px;
-
+    padding: 2px 8px 2px 8px;
 }
