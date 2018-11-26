@@ -25,7 +25,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 From the root of your Hugo site, clone the theme into `themes/skeleton` by running:
 
 ````
-git clone https://github.com/jblawatt/hugo-skeleton-theme.git themes/skeleton
+git clone https://github.com/jblawatt/hugo-theme-skeleton.git themes/skeleton
 ````
 
 Then, generate your site's files by running:
@@ -63,4 +63,4 @@ An example site is available under the `exampleSite/` directory.
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/jblawatt/skeleton-hugo-theme/blob/master/LICENSE) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/jblawatt/hugo-theme-skeleton/blob/master/LICENSE) file for more details.
